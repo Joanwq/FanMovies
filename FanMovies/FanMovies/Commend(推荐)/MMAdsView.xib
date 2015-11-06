@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="jtE-7F-6Qs" customClass="MMAdsView">
+            <rect key="frame" x="0.0" y="0.0" width="464" height="123"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9rW-Hf-tMA">
+                    <rect key="frame" x="0.0" y="0.0" width="464" height="123"/>
+                </scrollView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cE3-J6-cbY">
+                    <rect key="frame" x="30" y="84" width="165" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="165" id="dqW-F3-rNc"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="NHe-xV-lnC">
+                    <rect key="frame" x="213" y="76" width="39" height="37"/>
+                </pageControl>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="9rW-Hf-tMA" firstAttribute="top" secondItem="jtE-7F-6Qs" secondAttribute="top" id="0vJ-Vn-sB7"/>
+                <constraint firstAttribute="bottom" secondItem="cE3-J6-cbY" secondAttribute="bottom" constant="18" id="Ion-oo-cjr"/>
+                <constraint firstAttribute="bottom" secondItem="9rW-Hf-tMA" secondAttribute="bottom" id="aId-RD-28H"/>
+                <constraint firstItem="cE3-J6-cbY" firstAttribute="leading" secondItem="jtE-7F-6Qs" secondAttribute="leading" constant="30" id="dnI-kV-vJ1"/>
+                <constraint firstItem="NHe-xV-lnC" firstAttribute="centerX" secondItem="jtE-7F-6Qs" secondAttribute="centerX" id="gHl-f5-vBn"/>
+                <constraint firstAttribute="bottom" secondItem="NHe-xV-lnC" secondAttribute="bottom" constant="10" id="hxM-6O-PiR"/>
+                <constraint firstAttribute="trailing" secondItem="9rW-Hf-tMA" secondAttribute="trailing" id="kgl-1K-hzy"/>
+                <constraint firstItem="cE3-J6-cbY" firstAttribute="top" secondItem="jtE-7F-6Qs" secondAttribute="top" constant="84" id="sse-ov-6NZ"/>
+                <constraint firstItem="9rW-Hf-tMA" firstAttribute="leading" secondItem="jtE-7F-6Qs" secondAttribute="leading" id="zuU-hM-CGu"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="pageController" destination="NHe-xV-lnC" id="UOh-SO-LhW"/>
+                <outlet property="scrollView" destination="9rW-Hf-tMA" id="omS-tD-3ba"/>
+                <outlet property="titleLabel" destination="cE3-J6-cbY" id="bRV-Cz-ePf"/>
+            </connections>
+            <point key="canvasLocation" x="374" y="412.5"/>
+        </view>
+    </objects>
+</document>
